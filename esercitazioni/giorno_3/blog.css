@@ -1,0 +1,42 @@
+
+html{
+    font-size: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header div{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+main{
+    font-family: 'source code pro', monospace;
+    font-size: 1.2rem;
+    text-align: justify;   
+
+}
+
+.title{
+    width: 1000px;
+    color: blue;
+    text-align: center;
+}
+
+.paragrafo{
+    background-color: rgb(181, 162, 211);
+    width: 1000px;
+    
+}
+
+.firma{
+    text-align: left;
+    font-size: 0.8rem;
+    font-style: italic;
+    background-color: white;
+}
+
+.links{
+    width: 1000px;
+    text-align: center;    
+}

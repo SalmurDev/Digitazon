@@ -1,0 +1,122 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#boxes {
+    border: 1px solid;
+    background-color: blue;
+    /* height: 200px; */
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    float: left;
+}
+
+.box-right {
+    float: right;
+}
+
+.box:last-of-type {
+    margin: 0;
+}
+
+.clearRow {
+    clear: both;
+}
+
+#articles {
+    margin-top: 2rem;
+    /* background-color: aqua; */
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+#articles article {
+    width: 400px;
+    background-color: #516868;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #20032c;
+    float: left;
+    margin-right: 1rem;
+    cursor: pointer;
+    /* border: 1px solid #384747; */
+}
+
+#articles article:last-of-type {
+    margin-right: 0;
+}
+
+#articles article:hover {
+    background-color: #20032c;
+    color: #516868;
+}
+
+#articles .article-title {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+#articles .article-image {
+    margin-bottom: 1rem;
+}
+
+#articles .article-image-left,
+#articles .article-image-right {
+    float: left;
+    /* width: 100px; */
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+#articles .article-image span {
+    background-color: #516868;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    padding: 0.5rem;
+}
+
+.bg-maldives {
+    background-image: url("../images/maldives.jpg");
+}
+
+.bg-canaries {
+    background-image: url("../images/canaries.jpg");
+}
+
+#articles .article-image-left {
+    background-color: green;
+}
+
+#articles .article-image-right {
+    background-color: blue;
+}
+
+#articles footer {
+    float: right;
+    background-color: aqua;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: #20032c;
+    color: #516868;
+}
+
+#articles article:hover footer {
+    color: #20032c;
+    background-color: #516868;
+}
+
+#articles article:hover span {
+    color: #20032c;
+}

@@ -1,0 +1,227 @@
+<!-- scrivere per ogni tag visto fino ad ora il suo utilizzo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag</title>
+</head>
+<body>
+    <h1>HTML</h1>
+    <a href="showcaseCss.html"><strong>CSS</strong></a>
+    <div>
+        <h3>Html</h3>
+        <hr>
+        <span>L'Html è un contenitore che viene utilizzato per contenere una pagina di codice scritto in html</span>
+        <pre>
+            <code>
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title>Document&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+    </div>
+    <div>
+        <h3>Head</h3>
+        <hr>
+        <span> head è un contenitore di metadati e si utilizza per eventuali collegamenti ad altri fogli di codice (css)</span>
+        <pre>
+            <code>
+                
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title>Document&lt;/title&gt;
+                    &lt;link rel="stylesheet" href="style.css"&gt;
+                &lt;/head&gt;
+            </code>
+        </pre>
+    </div>
+    <div>
+        <h3>Body</h3>
+        <hr>
+        <span> Body è il corpo della pagina. Contiene la maggior parte delle informazioni visibili nella nostra pagina web</span>
+        <pre>
+            <code>
+                
+                &lt;body&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;
+                            &lt;a href=""/"https://www.digitazon.school/" target="_blank">Digitazon School&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;p&gt; ciao sono un altro paragrafo &lt;/p&gt;
+                        &lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/body&gt;
+            </code>
+        </pre>
+    </div>
+    <div>
+        <h3>Tag testi</h3>
+        <hr>
+        <span><b>p</b> è un paragrafo</span> <br>
+        <span><b>br</b> si utilizza per andare a capo</span> <br>
+        <span>i tag <b>h1/h2...h6</b> sono titoli/sottotitoli di varia grandezza e importanza</span> <br>
+        <span><u>u</u> rende il testo sottolineato</span> <br>
+        <span><b>b</b> e <b>strong</b> rendono il testo grassettato, strong ha una maggiore importanza semantica</span> <br>
+        <span><i>i</i> rende il testo in corsivo</span> <br>
+        <span><b>quote</b>(per le citazioni in line) e <b>blackquote</b> si utilizzano per le citazioni e il secondo consente di inserire l'autore</span> <br>
+        <span><b>a</b> serve per rendere un testo un link </span> <br>
+        <span><b>del</b> serve per rappresentare un testo errato(?)</span> <br>
+        <span><b>sub</b> serve per mettere un testo su un piano inferiore </span> <br>
+        <span><b>sup</b> serve per mettere un testo su un piano superiore</span>
+      
+        <pre>
+            <code>
+ 
+            </code>
+        </pre>
+    </div>
+ 
+    <div>
+        <h3>Img</h3>
+        <hr>
+        <span>img serve per inserire un'immagine all'interno della pagina</span>
+        <pre>
+            <code> 
+                &lt;div&gt;
+                    &lt;img src="esempio.jpg"&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div>
+        <h3>Liste</h3>
+        <hr>
+        <span><b>ol</b> serve per creare liste numerate</span> <br>
+        <span><b>ul</b> serve per creare liste non numerate</span> <br>
+        <span><b>li</b> rappresenta i dati all'interno della lista</span>
+        <pre>
+            <code> 
+                &lt;ol&gt;
+                        &lt;li&gt;elemento 1&lt;/li&gt;
+                        &lt;li&gt;elemento 2&lt;/li&gt;
+                        &lt;li&gt;elemento 3&lt;/li&gt;
+                        &lt;li&gt;elemento 4&lt;/li&gt;
+                &lt;/ol&gt;
+            </code>
+        </pre>
+    </div>
+    <div>
+        <h3>Tabella</h3>
+        <hr>
+        <span><b>table</b> è il tag per definire la tabella</span><br>
+        <span><b>th</b> è il tag per definire le celle più in alto della tabella</span><br>
+        <span><b>tr</b> è il tag chiamato table row e rappresenta la riga della tabella</span><br>
+        <span><b>td</b> è il tag table data e rappresenta i dati all'interno delle celle della tabella</span><br>
+        <span><b>tbody</b> è il tag table body e rappresenta il corpo della tabella </span><br>
+        <pre>
+            <code>
+                &lt;table>
+                    &lt;tr>
+                        &lt;th>Classe&lt;/th>
+                        &lt;th>Matricola&lt;/th>
+                        &lt;th>Locazione&lt;/th>
+                    &lt;/tr>
+                    &lt;tr>
+                        &lt;td>1A&lt;/td>
+                        &lt;td>12&lt;/td>
+                        &lt;td>Napoli&lt;/td>
+                    &lt;/tr>
+                    &lt;tr>
+                        &lt;td>2A&lt;/td>
+                        &lt;td>34&lt;/td>
+                        &lt;td>Milano&lt;/td>
+                    &lt;/tr>
+                &lt;/table>
+            </code>
+        </pre>
+
+        <div>
+            <h3>Div</h3>
+            <hr>
+            <span>Il div è un contenitore generico ed è un elemento di tipo block level element</span>
+            <pre>
+                <code>
+                    &lt;div&gt;
+                    &lt;h1>Glossario tag&lt;/h1&gt;
+                    &lt;button&gt;Cliccami&lt;/button&gt;
+                    &lt;div&gt;
+                </code>
+            </pre>
+        </div>
+
+        <div>
+            <h3>Struttura Web Page</h3>
+            <hr>
+            <span><b>header</b> rappresenta la parte superiore della pagina</span><br>
+            <span><b>main</b> rappresenta la parte centrale della pagina (deve esisterne solo uno)</span><br>
+            <span><b>footer</b> rappresenta la parte più in basso della pagina </span>
+            <pre>
+                <code>
+                    &lt;header&gt;
+                    &lt;h1>Glossario tag&lt;/h1&gt;
+                    &lt;/header&gt;
+                    &lt;main&gt;
+                        &lt;div&gt;
+                            &lt;img src="immagine.jpg"&gt;
+                            &lt;button&gt;Cliccami&lt;/button&gt;
+                    &lt;/main&gt;
+                    &lt;footer&gt;
+                    &lt;p>&lt;a href="#about.html">Contattami&lt;/a>&lt;/p&gt;
+                    &lt;/footer&gt;
+                        </code>
+                    </pre>
+                </code>
+            </pre>
+        </div>
+
+        <div>
+            <h3>Section</h3>
+            <hr>
+            <span><b>section</b> rappresenta una sezione generica della pagina</span>
+            <pre>
+                <code>
+                    &lt;section>
+                        &lt;img src="immagine.jpg"&gt;
+                        &lt;i>Testo fantastico sotto immagine&lt;/i&gt;
+                    &lt;/section>
+                </code>
+            </pre>
+        </div>
+        <div>
+            <h3>Article</h3>
+            <hr>
+            <span><b>article</b> è uno spazio riservato per articoli (utilizzato ad esempio per un blog) </span>
+            <pre>
+                <code>
+                    &lt;section>
+                        &lt;article>
+                            &lt;p&gt;
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                              when an unknown printer took a galley of type and scrambled it 
+                              to make a type specimen book. It has survived not only five centuries, 
+                              but also the leap into electronic typesetting, remaining essentially unchanged. 
+                              It was popularised in the 1960s with the release of Letraset sheets containing 
+                              Lorem Ipsum passages, and more recently with desktop publishing software 
+                              like Aldus PageMaker including versions of Lorem Ipsum.
+                            &lt;/p&gt;
+                        &lt;article>
+                    &lt;/section>
+                </code>
+            </pre>
+</body>
+</html>
