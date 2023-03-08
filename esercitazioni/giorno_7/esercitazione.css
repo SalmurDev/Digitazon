@@ -14,13 +14,6 @@ a:link[href="/the-one-ring"]{
 a:link[href="/melange"]{
     color: red;  
 }
-a:visited[href="/the-one-ring"]{
-    color: gold;
-}
-a:visited[href="/melange"]{
-    color: red;  
-}
-
 /* parte 2 - cit */
 div.movies-quotes span span::after{
     content: '«';
