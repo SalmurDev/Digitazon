@@ -1,0 +1,47 @@
+/* parte 1 - links */
+a{
+    text-decoration: none;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:link[href="/the-one-ring"]{
+    color: gold;
+}
+a:link[href="/melange"]{
+    color: red;  
+}
+a:visited[href="/the-one-ring"]{
+    color: gold;
+}
+a:visited[href="/melange"]{
+    color: red;  
+}
+
+/* parte 2 - cit */
+div.movies-quotes span span::after{
+    content: '«';
+}
+div.movies-quotes span::after{
+    content: '»';
+}
+div.movies-quotes span{
+    font-style: italic;
+}
+div.movies-quotes span span{
+    font-style: normal;
+    font-weight: bold;
+}
+/* parte 3 - checkbox */
+
+input[type=checkbox]:checked + span::after{
+    content: '❤'; 
+}
+
+/* parte 4 - bottone */
+button:hover{
+    display: none;
+}
