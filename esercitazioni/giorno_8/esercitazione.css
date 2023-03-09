@@ -1,0 +1,30 @@
+header {
+    display: flex;
+}
+
+
+header div:last-child {
+    margin-left:auto;
+}
+
+
+header span {
+    padding:5px;
+}
+
+
+.lesson-details {
+    display: flex;
+    border: 1px solid rgb(141, 138, 138);
+}
+
+
+.lesson-topic {
+    font-weight: bold;
+}
+
+
+.flex-grow-1 {
+    flex-grow: 1;
+
+}
