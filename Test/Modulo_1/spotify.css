@@ -1,0 +1,235 @@
+*{
+    font-family: 'Gotham', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+main{
+    display: flex;
+}
+#menu{
+    background-color: rgb(66, 0, 57);
+}
+#artist{
+    flex-grow: 5;
+}
+h2{
+    margin: 0 0 10px 10px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+.icons span{
+    padding: 5px;
+}
+hr{
+    margin: 10px;
+    opacity: 0.5;
+}
+#menu li{
+    list-style: none;
+    margin: 10px 5px;
+}
+#menu img{
+    width: 200px;
+}
+.download span{
+    border-radius: 100%;
+    background-color: rgb(98, 168, 124);
+    font-size: 0.9rem;
+    padding: 2px;
+}
+.download span:hover{
+    cursor: pointer;
+    background-color: rgb(68, 115, 85);
+}
+#menu .download span{
+    margin-left: 30px;
+}
+#artist{
+    display: flex;
+    flex-direction: column;
+}
+#title{
+    background-image: url(images/daft-punk-background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#title:first-child{    
+    font-size: 0.7rem;    
+}
+#title .icons{
+    margin-left: 20px;
+}
+h1{
+    font-size: 3rem;
+    margin-left: 20px;
+}
+#title p{
+    font-size: 0.7rem;
+    margin: 30px 20px;
+}
+#songs{    
+  background-image: linear-gradient(rgb(0, 0, 0),  rgb(66, 0, 57));
+  width: 100%;
+  height: 60%;
+}
+#songs button{
+    background-color: transparent;
+    font-size: 0.6rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: whitesmoke;
+    border-width: 1px;
+    padding: 5px;
+    height: 30px;
+    margin: 10px;
+}
+#songs > div:first-child{
+    display: flex;
+    align-items: center;
+}
+#songs > div > div > span{
+    margin: 10px;
+    font-size: 3rem;
+    background-color: rgb(98, 168, 124);
+    border-radius: 100%;
+}
+#songs > div > div > span:hover{
+cursor: pointer;
+background-color: rgb(68, 115, 85);
+}
+#songs > :nth-child(2){
+    display: flex;
+}
+#current_songs{
+    flex-grow: 2;
+}
+#current_songs h3{
+    margin: 20px;
+}
+table{
+    border-spacing: 0;
+    margin-left: 20px;
+}
+td{
+    height: 40px;
+    text-align: center;
+}
+tr td:first-child,
+tr td:nth-child(5){
+    width: 40px;
+}
+table img{
+    width: 40px;
+}
+tr td:nth-child(3){
+    text-align: left;
+    padding: 5px;
+    width: 300px;
+}
+tr td:nth-child(4)
+{
+    padding: 5px;
+    width: 200px;
+}
+tr td:last-child{
+    width: 150px;
+}
+tbody > :nth-child(4){
+    background-color: rgb(122, 0, 106);
+    font-weight: bold;
+}
+tbody > :nth-child(4) td{
+    color: rgb(98, 168, 124);
+}
+#right{
+    margin: 20px;
+}
+#right img{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+#right > div {
+    display: flex;
+}
+#right > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+h5{
+    margin-bottom: 2px;
+}
+#right p{
+    font-size: 0.8rem;
+}
+footer{
+    background-color: rgb(97, 0, 84);
+    display: flex;
+    align-items: center;
+    height: 55px;
+}
+footer p{
+    font-size: 0.8rem;
+}
+footer > div:first-child{
+    width: 100px;
+    margin-left: 10px;
+}
+footer > div:nth-child(2) p{
+    font-size: 1.5rem;
+    color: rgb(98, 168, 124);
+    margin: 0 20px;
+}
+#playing_song{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#playing_song > :first-child{
+    display: flex;
+    align-items: center;
+}
+#playing_song > :first-child span:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+#playing_song > :nth-child(2){
+    display: flex;
+    align-items: center;
+    margin: 0 100px;
+}
+footer span{
+    font-size: 1.2rem;
+    margin: 0 10px;
+    border-radius: 100%;
+}
+#listened{
+    background-color: whitesmoke;
+    height: 3px;
+    width: 80px;
+    margin-left: 10px;
+}
+#remaining{
+    background-color: grey;
+    height: 3px;
+    width: 800px;
+    margin-right: 10px;
+}
+footer :last-child{
+    display: flex;
+    align-items: center;
+}
+#volume{
+    background-color: whitesmoke;
+    height: 3px;
+    width: 100px;
+}
