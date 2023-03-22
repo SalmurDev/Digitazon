@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(185, 234, 254);
+}
+li{
+    list-style-type: none;
+}
+.h_left{
+    flex-grow: 1;
+    display: flex;
+}
+.h_left div{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.h_center{
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h_center input{
+    padding: 5px;
+    width: 100%;
+}
+.h_right{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+span{
+    padding: 5px;
+    margin: 5px;
+    border: 1px black solid;
+    border-radius: 100%;
+}
+main{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(154, 223, 250);
+}
+main section{
+    flex-grow: 1;
+}
+.m_left{
+    display: flex;
+    flex-direction: column;
+}
+.m_left button{ 
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgb(118, 113, 252);
+    border-radius: 5px;
+    border: 0;
+}
+.m_left button:hover{    
+    background-color: rgb(138, 134, 253);
+    cursor: pointer;
+}
+.m_left li{
+    display: flex;
+    align-items: center;
+}
+.m_left li:hover,
+.m_center li:hover{
+    border-radius: 5px;
+    background-color: rgb(119, 214, 251);
+}
+.m_center{
+    flex-grow: 3;
+    background-color: rgb(185, 234, 254);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.m_center > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+.m_center > div > div{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.m_center ul{
+    width: 100%;
+}
+.m_center ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.m_center li div{
+    margin: 5px;
+}
+.m_right{
+    flex-grow: 0;
+}
+.m_right ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.m_right li{
+    margin: 10px 5px;
+}
