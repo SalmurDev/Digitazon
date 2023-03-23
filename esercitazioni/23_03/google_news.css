@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+header{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-bottom: 1px solid rgb(125, 125, 125);
+    width: 100%;
+    background-color: rgb(251, 251, 251);
+    padding: 5px;
+}
+h1{
+    margin: 10px 0;
+}
+h4{
+    color: rgb(30, 30, 30);
+}
+h5{
+    font-weight: normal;
+}
+span{
+    color: rgb(45, 45, 45);
+}
+header section{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+header input{
+    width: 50%;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(233, 232, 232);
+    border-radius: 5px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+}
+.logo p{
+    font-size: 1.2rem;
+}
+.logo:hover{
+    cursor: pointer;
+}
+header img{
+    width: 70px;
+}
+.right span{
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 100%;
+}
+.right span:hover{
+    background-color: rgb(194, 194, 194);
+    cursor: pointer;
+}
+header nav{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+nav div{
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(79, 79, 79);
+}
+nav div:hover{
+    cursor: pointer;
+    color: black;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 800px;
+    gap: 10px;
+}
+main > :first-child{
+    margin-top: 100px;
+}
+main > div:nth-child(2){
+    display: flex;
+    gap: 20px;
+}
+.main_news{
+    width: 490px;
+}
+.secondary_news{
+    width: 290px;
+}
+.main_news{
+    display: flex;
+    flex-direction: column;
+}
+.main_news > section{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 5px 0;
+}
+.main_news img{
+    width: 250px;
+    border-radius: 10px;
+}
+.secondary_news > section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.secondary_news section section{
+    display: flex;
+    align-items: center;
+}
+.secondary_news img{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;    
+}
+.news{
+    margin: 5px 0;
+}
+.news:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
