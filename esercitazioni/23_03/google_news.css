@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif
 }
+body{
+    background-color: rgb(236, 236, 236);
+}
 header{
     display: flex;
     flex-direction: column;
@@ -84,13 +87,31 @@ main{
     margin: auto;
     width: 800px;
     gap: 10px;
+    background-color: white;
+    padding: 0 10px;
 }
 main > :first-child{
     margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 main > div:nth-child(2){
     display: flex;
     gap: 20px;
+}
+.weather{
+    display: flex;
+}
+.weather span{
+    font-size: 4rem;
+}
+.weather a{
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.weather a:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 .main_news{
     width: 490px;
@@ -108,7 +129,7 @@ main > div:nth-child(2){
     gap: 5px;
     margin: 5px 0;
 }
-.main_news img{
+.sciopero{
     width: 250px;
     border-radius: 10px;
 }
@@ -121,7 +142,7 @@ main > div:nth-child(2){
     display: flex;
     align-items: center;
 }
-.secondary_news img{
+.img_little{
     width: 80px;
     height: 80px;
     border-radius: 5px;    
@@ -132,4 +153,8 @@ main > div:nth-child(2){
 .news:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+.logo_giornale{
+    width: 60px;
+    height: 30px;
 }
