@@ -47,7 +47,6 @@ nav div{
     display: flex;
     flex-direction: column;
 }
-/* Non metto una classe per i vari hover (che sarebbe decisamente meglio) perchè html validate mi dà errore se metto una seconda classe su uno span */
 .hover:hover{
     background-color: var(--hover);
     cursor: pointer;
