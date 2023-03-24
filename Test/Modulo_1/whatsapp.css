@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(218, 218, 218);
+}
+:root{
+    --hover: rgb(75, 75, 75);
+    --msg: rgb(230, 230, 230);
+    --green: rgb(0, 163, 65);
+    --light-green: rgb(102, 210, 98);
+    --dark-green: rgb(0, 124, 49);
+    --input: rgb(43, 44, 52);
+    --current:  rgb(58, 59, 71);
+}
+::placeholder{
+    color: rgb(218, 218, 218);
+}
+body{
+    display: flex;
+    height: 100vh;
+    padding: 10px;
+    background-color: rgb(31, 32, 38);
+}
+span{
+    padding: 5px;
+    border-radius: 100%;
+}
+input {
+    width: 90%;
+    height: 40px;
+    padding: 5px;
+    background-color: var(--input);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+nav{
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+nav div{
+    display: flex;
+    flex-direction: column;
+}
+/* Non metto una classe per i vari hover (che sarebbe decisamente meglio) perchè html validate mi dà errore se metto una seconda classe su uno span */
+.hover:hover{
+    background-color: var(--hover);
+    cursor: pointer;
+}
+.msg .hover:hover{
+    background-color: var(--dark-green);
+}
+.chats{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    border-right: 1px solid black;
+    width: 15%;
+}
+.main{
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+}
+.chats header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.chats input{
+    margin: 10px auto;
+}
+.chats > div{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.chats ul{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-y: scroll;
+}
+.chats li{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 30px 5px;
+    border-radius: 10px;
+}
+.chats li:nth-of-type(3){
+    background-color: var(--current);
+}
+.chats li > div{
+    width: 100%;
+}
+.chats li div div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+li div span{
+    background-color: var(--green );
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    color: black;
+    margin: 0px 10px;
+}
+li p{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+li:first-of-type h5,
+li:nth-of-type(2) h5{
+    color: var(--green);
+}
+.main header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-grow: 0;
+    height: 50px;
+}
+.main header span{
+    margin: 10px;
+    flex-grow: 0;
+}
+.main header .vanish{
+    display: none;
+}
+.main header div{
+    flex-grow: 1;
+}
+.main main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    background-image: url(grey_wallpaper.jpg);
+    background-size: cover;
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+}
+.msg{
+    margin: 10px 10%;        
+    display: flex;
+    align-items: center;
+}
+.msg div{
+    background-color: var(--msg);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+.me{
+    align-self: flex-end;
+}
+.me h5{
+    display: none;
+}
+.me div{
+    background-color: var(--light-green);
+}
+.msg a{
+    color: blue;
+}
+.msg h5, .msg h6{
+    color: black;
+}
+/* non lo metto insieme a .me per una questione di ordine */
+.msg h6{
+    align-self: flex-end;
+}
+.msg span{
+    background-color: var(--green);
+}
+footer{
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    height: 50px;
+    gap: 5px;
+    padding: 10px;
+}
+@media only screen and (max-width: 1080px){    
+    nav{
+        display: none;
+    }
+    section.chats{
+        display: none;
+    }
+    .main header .vanish{
+        display: initial;
+    }
+}
