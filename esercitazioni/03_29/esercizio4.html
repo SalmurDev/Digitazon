@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio4</title>
+</head>
+<body>
+    <!-- Ex 4:
+creare una variabile che contenga il seguente array
+[ 'mario', 'stefania', 'luca', lee' ]
+stampare in output SOLO il nome più lungo tra quelli presenti nell'array (se i valori dell'array cambiano, anche il risultato cambia senza alterare l'algoritmo) -->
+<script>
+    let x = [ 'mario', 'stefania', 'luca', 'lee']
+    let l = 0
+    let name = 'a'
+    for(let i=0; i=x.length-1; i++){
+        if(x[i].length > l){
+            l = (x[i].length)
+            name = x[i]
+        }
+    }
+    console.log(name)
+    
+</script>
+
+</body>
+</html>
