@@ -17,10 +17,10 @@ stampare in output SOLO il nome più lungo tra quelli presenti nell'array (se i 
 
         let x = ['mario', 'stefania', 'luca', 'lee']
         let l = 0
-        let n = 'a'
+        let n
         for (let i = 0; i = x.length - 1; i++) {
             if (x[i].length > l) {
-                l = (x[i].length)
+                l = x[i].length
                 n = x[i]
             }
         }
