@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio5</title>
+</head>
+<body>
+    <!--dato un array di 5 valori ETEROGENEI a piacere, stabilire:
+- quante stringhe ci sono
+- quanti numeri ci sono
+- quanti booleani ci sono
+- qual è il tipo di dato maggiormente presente nell'array-->
+
+<script>
+
+    const a = ['dsfsdf', 542, false, 7874, 'vfrrrs', true, 1, 888, 'sdfs', 'rrss']
+
+    let strings = 0
+    let numbers = 0
+    let booleans = 0
+    for(let i=0; i<a.length; i++){
+        if(typeof a[i] == 'string') strings++
+        if(typeof a[i] == 'number') numbers++
+        if(typeof a[i] == 'boolean') booleans++        
+    }
+    console.log('ci sono ' + strings + ' stringhe')
+    console.log('ci sono ' + numbers + ' numeri')
+    console.log('ci sono ' + booleans + ' booleani')
+
+    const count = [strings, numbers, booleans]
+    const snb = [' stringhe', ' numeri', ' booleani']
+    let max = strings
+    let result = []    
+    for(let i=1; i<count.length; i++)
+        if(count[i]>max)
+            max = count[i]
+    for(i=0; i<count.length; i++)
+        if(count[i]==max)
+            result.push(snb[i])
+    console.log('sono maggiormente presenti:' + result)
+
+</script>
+
+</body>
+</html>

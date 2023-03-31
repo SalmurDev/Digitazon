@@ -15,16 +15,26 @@ creare una variabile che contenga il seguente array
 stampare in output SOLO il nome più lungo tra quelli presenti nell'array (se i valori dell'array cambiano, anche il risultato cambia senza alterare l'algoritmo) -->
     <script>
 
-        let x = ['mario', 'stefania', 'luca', 'lee']
-        let l = 0
-        let n
-        for (let i = 0; i = x.length - 1; i++) {
-            if (x[i].length > l) {
-                l = x[i].length
-                n = x[i]
+        let lables = ['mario', 'stefania', 'luca', 'lee', 'johnatan', 'riccardo']
+        let currentMaxLength = lables[0].length
+        let currentName = lables[0]
+        let result = [lables[0]]
+
+        for (let i = 1; i < lables.length; i++) {
+            if (lables[i].length > currentMaxLength) {
+                result = []
+                currentMaxLength = lables[i].length
+                currentName = lables[i]
+                result.push(currentName)
             }
+            else if(lables[i].length == currentMaxLength){   
+                currentName = lables[i]             
+                result.push(currentName)
+            }
+            console.log(i + ' ' + result)
         }
-        console.log(n)
+
+        console.log(result)
 
     </script> 
 

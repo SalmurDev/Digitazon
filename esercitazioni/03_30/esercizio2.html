@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio2</title>
+</head>
+
+<body>
+    <!--dato un array di 10 numeri a piacere, stampare quanti sono i numeri positivi, quelli negativi, quelli dispari e quelli pari (per trovare il resto di una divisione utilizzare l'operatore %)-->
+
+    <script>
+
+        const a = [12, -456, 1, 347, 34235, -23, -5435, 2, 5, -8643]
+        let positive = 0
+        let negative = 0
+        let even = 0
+        let odd = 0
+
+        for (let i = 0; i < a.length; i++) 
+            if (a[i] >= 0) positive++
+            else negative++        
+        console.log('ci sono ' + positive + ' numeri positivi')
+        console.log('ci sono ' + negative + ' numeri negativi')
+
+        for (let i = 0; i < a.length; i++) 
+            if (a[i] % 2) odd++
+            else even++            
+        console.log('ci sono ' + even + ' numeri pari')
+        console.log('ci sono ' + odd + ' numeri dispari')
+
+    </script>
+
+</body>
+
+</html>

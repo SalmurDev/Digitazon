@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio4</title>
+</head>
+
+<body>
+    <!--data una stringa a piacere, 
+SE questa contiene una vocale, un underscore, un dollaro e un numero, stampare 'password OK', altrimenti, stampare 'password NOT OK'-->
+    <script>
+
+        string = 'hfsudfbh_$234'
+        let vowels = 0
+        let underscores = 0
+        let dollars = 0
+        let numbers = 0
+        for(let i=0; i<string.length; i++){  
+            let char = string.charAt(i)          
+            if(char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') vowels++
+            if(char == '_') underscores++
+            if(char == '$') dollars++
+            if(char >= 0) numbers++
+        }
+        //console.log(vowels)
+        //console.log(underscores)
+        //console.log(dollars)
+        //console.log(numbers)
+        if(vowels>0 && underscores>0 && dollars>0 && numbers>0)
+            console.log('password OK')
+        else
+            console.log('password NOT OK')
+        
+    </script>
+
+</body>
+
+</html>
