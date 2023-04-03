@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio3</title>
+</head>
+<body>
+    <!--dato un array di 3 stringhe a piacere, stampare quante di queste stringhe iniziano con il valore 'a' e terminano con il valore '_'-->
+    <script>
+
+        const a =['antonio_', 'alberto', 'marco_']
+        let a_ = 0
+        for(let i=0; i<a.length; i++){
+            if(a[i].charAt(0)=='a')
+                if(a[i].charAt(a[i].length-1)=='_')
+                    a_++           
+        }
+        console.log(a_)
+        
+    </script>
+</body>
+</html>

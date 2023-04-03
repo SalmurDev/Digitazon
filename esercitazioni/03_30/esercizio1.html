@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio1</title>
+</head>
+<body>
+    <!--dato un array di 4 stringhe a piacere, stampare ogni valore stringa invertito (es 'ciao' diventa 'oaic', ...)-->
+    
+    <script>
+
+        //crea un array
+        //crea un ciclo for che seleziona gli elementi dell'array singolarmente
+        //crea un ciclo interno che seleziona gli elementi in ordine inverso
+        //metti gli elementi in un array
+        const a = ['ciao', 'buongiorno', 'buonasera', 'buonanotte']  
+        let result =[]
+
+        for(let i = 0; i < a.length; i++ ){      
+            let currentWord = ''                
+            for(let j = a[i].length-1; j >= 0; j--){
+                currentWord += a[i].charAt(j)
+            }
+            console.log(currentWord)
+            result.push(currentWord)
+        }
+        console.log(result)
+        
+    </script>
+</body>
+</html>

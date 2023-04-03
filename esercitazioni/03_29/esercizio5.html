@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio5</title>
+</head>
+
+<body>
+    <!-- 
+        Ex 5:
+creare una variabile che contenga il seguente array
+[17, 5, 87, 14]
+stampa in output la somma totale di tutti i numeri contenuti nell'array nella modalità più modulare.
+     -->
+
+
+    <script>
+        let x = [17, 5, 87, 14]
+        let somma = 0
+        let sommaModulare = []
+        for( i=0 ; i<x.length ; i++ ){
+            somma = (somma + x[i])
+            sommaModulare.push(somma)
+        }
+        console.log(sommaModulare)
+    </script>
+
+</body>
+
+</html>

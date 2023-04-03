@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio3</title>
+</head>
+<body>
+    <!-- Ex 3:
+creare una variabile che contenga il seguente array
+[ 'mario', 'luigi', 'peach', 'daisy' ]
+stampare in output:
+DY
+PH
+LI
+MO
+(la prima e l'ultima lettera di ogni valore dell'array in senso invertito) -->
+
+<script>
+    let x = [ 'mario', 'luigi', 'peach', 'daisy' ]
+    for(let i = x.length-1 ; i >= 0 ; i--){
+            let s = (x[i].charAt(0) + x[i].charAt(x[i].length-1))
+            console.log(s.toUpperCase())
+        }
+
+</script>
+
+</body>
+</html>

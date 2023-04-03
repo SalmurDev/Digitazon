@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio2</title>
+</head>
+<body>
+    <!-- Ex 2:
+creare una variabile che contenga il seguente array
+[ 'mario', 'luigi', 'peach', 'daisy' ]
+stampare in output tutti i valori dell'array che NON terminano con la lettera 'o' -->
+
+<script>
+
+let x = [ 'mario', 'luigi', 'peach', 'daisy', 'giorgia' ]
+// esercizio senza parentesi graffe
+for(let i = 0, s = x[i] ; i < x.length ; i++ ) 
+    if(s.charAt(s.length - 1) != 'o') console.log(s)   
+
+</script>
+
+</body>
+</html>
