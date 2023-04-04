@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio 1</title>
+</head>
+
+<body>
+    <!--creare una funzione compareMap che accetta in ingresso due mappe.
+La funzione restituisce true SE le due mappe sono mappe, SE hanno lo stesso numero di elementi e per le stesse chiavi, gli stessi valori. 
+Testare il funzionamento di compareMap passando due mappe diverse nella prima chiamata, e due mappe uguali nella seconda chiamata-->
+
+    <script>
+
+        function compareMap(map1, map2) {
+            let result = false
+            if (map1 instanceof Map && map2 instanceof Map) {
+                if (map1.size == map2.size) {
+                    let map1Content = ''
+                    let map2Content = ''
+                    map1.forEach(function (value, key) {
+                        map1Content += key + value
+                    })
+                    console.log(map1Content)
+                    map2.forEach(function (value, key) {
+                        map2Content += key + value
+                    })
+                    console.log(map2Content)
+                    if (map1Content == map2Content) result = true
+                }
+            }
+            return result
+        }
+
+        const map1 = new Map([
+            ['nome', 'Mario'],
+            ['cognome', 'Rossi']
+        ]);
+        const map2 = new Map([
+            ['nome', 'Mario'],
+            ['cognome', 'Rossi']
+        ]);
+        console.log(compareMap(map1, map2))
+
+        const map3 = new Map([
+            ['nome', 'Giorgio'],
+            ['cognome', 'Bianchi']
+        ]);
+        const map4 = new Map([
+            ['name', 'Giorgio'],
+            ['surname', 'Bianchi']
+        ]);
+
+        console.log(compareMap(map3, map4))
+
+    </script>
+</body>
+
+</html>

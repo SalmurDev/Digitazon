@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio4</title>
+</head>
+
+<body>
+    <!--realizzare due istanze di Map che rappresentano due studenti che abbiano la seguente struttura:
+- name, lastname, rates 
+dove name e lastname sono stringhe e rates è un array di 5 numeri
+assegnare valori a piacere per ogni chiave, es mario rossi 4, 5, 6, 4, 3 e luigi verdi 8, 7, 4, 9, 9
+creare la funzione bestStudent, che prende in ingresso due mappe che rappresentano uno studente, e restituisce il nome e il cognome dello studente che ha la media voto migliore tra i due.
+Richiamare questa funzione passando le due mappe create precedentemente-->
+
+    <script>
+
+        const s1 = new Map()
+        s1.set('name', 'Mario')
+        s1.set('lastname', 'Rossi')
+        s1.set('rates', [10, 8, 3, 5, 6])
+        const s2 = new Map()
+        s2.set('name', 'Paolo')
+        s2.set('lastname', 'Bianchi')
+        s2.set('rates', [6, 2, 3, 7, 9])
+        const s3 = new Map()
+        s3.set('name', 'Alberto')
+        s3.set('lastname', 'Verdi')
+        s3.set('rates', [6, 2, 3, 7, 9])
+        const s4 = new Map()
+        s4.set('name', 'Giovanni')
+        s4.set('lastname', 'Neri')
+        s4.set('rates', [6, 10, 8, 7, 9])
+
+        function mediumValue(array) {
+            if (Array.isArray(array)) {
+                let sum = 0
+                for (i = 0; i < array.length; i++) {
+                    sum += array[i]
+                }
+                return sum / array.length
+            }
+        }
+
+        function bestStudent(student1, student2) {
+            if (mediumValue(student1.get('rates')) > mediumValue(student2.get('rates'))) {
+                return 'Lo studente ' + student1.get('name') + ' ' + student1.get('lastname') + ' è il migliore'
+            }
+            else if (mediumValue(student2.get('rates')) > mediumValue(student1.get('rates'))) {
+                return 'Lo studente ' + student2.get('name') + ' ' + student2.get('lastname') + ' è il migliore'
+            }
+            else return 'I due studenti hanno la stessa media'
+        }
+
+        console.log(bestStudent(s1, s2))
+        console.log(bestStudent(s2, s3))
+        console.log(bestStudent(s1, s4))
+
+
+    </script>
+
+
+</body>
+
+</html>
