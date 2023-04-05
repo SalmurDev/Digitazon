@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio2</title>
+</head>
+<body>
+    <!--creare una funzione 'invertString' che prende in ingresso una stringa e la restituisce invertita.
+Chiamare la funzione con i seguenti valori e stampare i risulati in console:
+- javascript
+- console
+- anna
+- 100
+Nota: se il valore non è una stringa, ma un numero, stampa il numero moltiplicato per 10.
+Se il valore non è una stringa ne un numero, stampa 'errore'-->
+
+<script>
+
+    function invertString(s){
+        if(typeof s == 'string'){
+            let inverted = ''
+            for(i=s.length-1;i>=0;i--) inverted += s[i]            
+            console.log('la stringa invertita è: ' + inverted)
+        }
+        else if(typeof s == 'number') console.log('il numero moltiplicato per 10 è: ' + (s * 10))
+        else console.log('errore')
+    }
+
+    invertString('javascript')
+    invertString('console')
+    invertString('anna')
+    invertString(100)
+
+</script>
+    
+</body>
+</html>

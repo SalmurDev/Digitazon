@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio3</title>
+</head>
+
+<body>
+
+    <!--Ex 3
+crea una funzione 'xRayArray' che prende in ingresso un array e mi stampa:
+- la lunghezza dell'array
+- se l'array contiene SOLO numeri o meno
+- se l'array è vuoto
+- se è un array oppure un altro tipo di dato
+La funzione NON restituisce nessun valore.
+Chiamare la funzione con i seguenti valori:
+- [10, 20, 30]
+- []
+- ['ciao', 100]
+- 'ciao'-->
+
+    <script>
+
+        function xRayArray(a) {
+            if (Array.isArray(a)) {
+                console.log(a.length)
+                let num = 0;
+                for (i = 0; i < a.length; i++) {
+                    if (typeof a[i] == 'number') num++;
+                }
+                if (num == a.length && a.length > 0) console.log('l\'array contiene solo numeri')
+                else if (a.length == 0) console.log('l\'array è vuoto')
+                else console.log('l\'array non contiene solo numeri')
+            }
+            else console.log('la variabile non è un array')
+        }
+
+        let ar1 = [10, 20, 30]
+        let ar2 = []
+        let ar3 = ['ciao', 100]
+        let ar4 = ['ciao']
+        let ar5 = 'ciao'
+        xRayArray(ar1)
+        xRayArray(ar2)
+        xRayArray(ar3)
+        xRayArray(ar4)
+        xRayArray(ar5)
+
+    </script>
+
+</body>
+
+</html>

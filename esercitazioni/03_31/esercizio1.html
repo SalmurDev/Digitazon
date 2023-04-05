@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio1</title>
+</head>
+<body>
+    <!--creare una funzione 'ope' che prende in ingresso una stringa e due numeri.
+controlla il valore della stringa.
+Se è '+' restituisci la somma dei due numeri
+Se è '-' restituisci la differenza dei due numeri
+Se è '*' o 'x' restituisci la moltiplicazione dei due numeri
+Se è '/' restituisci la divisione dei due numeri
+altrimenti restituisci 0
+
+Chiama la funzione ope 4 volte variando ogni volta i valori utilizzati e stampa in console i risultati-->
+
+<script>
+
+    function ope(a, b, c){
+        if(typeof a == 'number' && typeof b == 'string' && typeof c == 'number'){
+            let result = 0
+            if(b == '+') result = a + c
+            if(b == '-') result = a - c
+            if(b == '*' || a == 'x') result = a * c
+            if(b == '/') result = a / c
+            console.log('il risultato è: ' + result)
+        }   
+        else console.log('i dati inseriti sono errati')
+    }
+
+    let x = 10
+    let y = 2
+    ope(x,'+',y)
+    ope(x,'-',y)
+    ope(x,'*',y)
+    ope(x,'/',y)
+    ope(x,'a',y)
+    ope('d','+',y)
+
+</script>
+    
+</body>
+</html>
