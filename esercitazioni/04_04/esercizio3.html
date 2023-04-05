@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio3</title>
+</head>
+
+<body>
+    <!--realizzare la funzione uniqueArray che prende in ingresso un array e rimuove tutti gli elementi duplicati, restituendo un nuovo array privo quindi di valori duplicati.
+Chiamare la funzione con il valore [10, 'ciao', 20, 'ciao', 'javascript', 10] e stampare in output il nuovo valore-->
+
+    <script>
+
+        function uniqueArray(array) {
+            if (Array.isArray(array)) {
+                for (i = 0; i < array.length; i++) {
+                    for (j = 0; j < i; j++) {
+                        if (array[i] == array[j]) {
+                            array.splice(i, 1)
+                        }
+                    }
+                }
+            }
+            return array
+        }
+
+        array1 = [10, 'ciao', 20, 'ciao', 'javascript', 10]
+        uniqueArray(array1)
+        console.log(array1)
+
+    </script>
+
+</body>
+
+</html>

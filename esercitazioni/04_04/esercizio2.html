@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio2</title>
+</head>
+
+<body>
+    <!--creare una funzione compareSet che accetta in ingresso due set.
+La funzione restituisce true SE i due set sono set, SE hanno lo stesso numero di elementi e  gli stessi valori. 
+Testare il funzionamento di compareSet passando due set diversi nella prima chiamata, e due set uguali nella seconda chiamata-->
+    <script>
+
+        function compareSet(set1, set2) {
+            let result = false
+            if (set1 instanceof Set && set2 instanceof Set) {
+                if (set1.size == set2.size) {
+                    let set1Content = ''
+                    let set2Content = ''
+                    set1.forEach(function (value) {
+                        set1Content += value
+                    })
+                    set2.forEach(function (value) {
+                        set2Content += value
+                    })
+                    if (set1Content == set2Content) result = true
+                }
+            }
+            return result
+        }
+
+        const set1 = new Set(['a', 'b', 'c', 'd']);
+        const set2 = new Set(['a', 'b', 'c', 'd']);
+
+        console.log(compareSet(set1, set2))
+
+        const set3 = new Set(['a', 'b', 'c', 'd']);
+        const set4 = new Set(['a', 't', 'c', 'r']);
+
+        console.log(compareSet(set3, set4))
+
+
+    </script>
+
+
+</body>
+
+</html>

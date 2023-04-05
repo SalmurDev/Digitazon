@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio4</title>
+</head>
+
+<body>
+    <!--creare una funzione treeStr che prende in ingresso una stringa che deve avere una lunghezza superiore pari e superiore a 4 e stampa la seguente formattazione in output:
+
+treeStr('javascript') 
+            s
+           s c
+        a s c r
+     v a s c r i
+  a v a s c r i p
+j a v a s c r i p t-->
+
+    <script>
+
+        function treeStr(input) {
+            let s = input.length / 2 - 1
+
+            for (let k = 0; k < input.length/2+1 ; k++) {
+                let a = ''
+                for (let i = 0; i < input.length; i++) {
+                    if (i > (s - k) && i <= (s + k) || i == s) {
+                        if (i == s && k == 0) {
+                            a += ' '
+                        }
+                        a += ' ' + input[i] + ' '
+                    }
+                    else
+                        a += '   '
+                }
+                console.log(a);
+            }
+        }
+
+        let string = 'javascript'
+        treeStr(string)
+
+    </script>
+
+</body>
+
+</html>

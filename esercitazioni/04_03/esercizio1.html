@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio1</title>
+</head>
+
+<body>
+    <!--creare la funzione selector, che accetta una stringa in ingresso è in grado di stabilire se è un selettore CSS valido (selettore semplice, senza annidamenti), tra:
+- selettore di id
+- selettore di classe
+- selettore di un elemento tra div, span e img
+Se lo è, restituisce true, altrimenti false.
+In fase di chiamata, stampare un apposito messaggio in ouput, per ognuna delle seguenti chiamate:
+selector('#myDiv')  -> è un selettore valido, di id
+selector('.myDiv')  -> è un selettore valido, di classe
+selector('div')          -> è un selettore valido, di elemento div
+selector('paperino')  -> non è un selettore valido
+selector('ul')               -> non è un selettore valido (non è div, span o img)-->
+
+    <script>
+
+        function selector(sel) {
+            let isSelector = false
+            if (sel.charAt(0) == '#') {
+                return 'L\'elemento ' + sel + ' è un selettore di id'
+                isSelector = true
+            }
+            else if (sel.charAt(0) == '.') {
+                return 'L\'elemento ' + sel + ' è un selettore di classe'
+                isSelector = true
+            }
+            else if (sel == 'div') {
+                return 'L\'elemento ' + sel + ' è un selettore di div'
+                isSelector = true
+            }
+            else if (sel == 'span') {
+                return 'L\'elemento ' + sel + ' è un selettore di span'
+                isSelector = true
+            }
+            else if (sel == 'img') {
+                return 'L\'elemento ' + sel + ' è un selettore di img'
+                isSelector = true
+            }
+            else {
+                return 'L\'elemento ' + sel + ' non è un selettore valido'
+            }
+        }
+
+        selector1 = '#mydiv'
+        selector2 = '.mydiv'
+        selector3 = 'div'
+        selector4 = 'paperino'
+        selector5 = 'ul'
+
+        console.log(selector(selector1))
+        console.log(selector(selector2))
+        console.log(selector(selector3))
+        console.log(selector(selector4))
+        console.log(selector(selector5))
+
+    </script>
+
+</body>
+
+</html>

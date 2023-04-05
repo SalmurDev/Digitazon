@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio2</title>
+</head>
+
+<body>
+    <!--creare una funzione checkArray che prende in ingresso un array di N numeri e stampa:
+- quanti sono pari
+- quanti sono dispari
+- se contiene il numero 10
+- se è un array o meno
+chiamare con:
+checkArray([90, 78, 45, 34])
+checkArray([0, 0, 0])
+checkArray([10])
+checkArray(10)-->
+
+    <script>
+
+        function checkArray(array) {            
+            let oddNumbers = 0
+            let evenNumbers = 0
+            let contain10 = false
+            if (typeof array == 'object') {
+                console.log('Analisi dell\'elemento [' + array + ']')
+                for (i = 0; i < array.length; i++) {
+                    if (array[i] % 2 == 1) oddNumbers++
+                    else evenNumbers++
+                    if (array[i] == 10) contain10 = true
+                }
+                console.log('l\'array contiene ' + oddNumbers + ' numeri dispari')
+                console.log('l\'array contiene ' + evenNumbers + ' numeri pari')
+                if (contain10 == true) console.log('l\'array contiene il numero 10')
+                else console.log('l\'array non contiene il numero 10')
+            }
+            else {
+                console.log('Analisi dell\'elemento ' + array)
+                console.log('l\'elemento analizzato non è un array')
+            }
+            console.log('--------------------------------')
+        }
+        checkArray([90, 78, 45, 34])
+        checkArray([0, 0, 0])
+        checkArray([10])
+        checkArray(10)
+
+    </script>
+
+</body>
+
+</html>

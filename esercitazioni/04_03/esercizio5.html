@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio5</title>
+</head>
+
+<body>
+    <!--Creare una funzione makeMatrix, che prende in ingresso un array di 10 numeri a piacere compresi tra 1 e 10, e restituisce una matrice composta da due array, uno in cui ci sono tutti i numeri pari o superiori a 6, uno in cui ci sono tutti i numeri inferiori a 6.
+    Con la matrice restituita, stampare la media dei numeri pari o superiori a 6 del primo array e la media dei numeri inferiori a 6 del secondo array.-->
+
+    <script>
+
+        function makeMatrix(array) {
+            if (typeof array == 'object' && array.length == 10) {
+                let firstArray = []
+                let secondArray = []
+                let matrix = [[], []]
+                for (i = 0; i < array.length; i++) {
+                    if (array[i] >= 6) firstArray.push(array[i])
+                    else secondArray.push(array[i])
+                }
+                matrix = [firstArray, secondArray]
+                return matrix
+            }
+            else console.log('i dati in ingresso non sono corretti')
+        }
+
+        function mediumValue(array) {
+            if (typeof array == 'object') {
+                let sum = 0
+                for (i = 0; i < array.length; i++) {
+                    sum += array[i]
+                }
+                return sum / array.length
+            }
+        }
+
+        array1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        array2 = [3, 9, 4, 6, 15, 789, 2, 99, 8, 48]
+
+        matrix1 = makeMatrix(array1)
+        matrix2 = makeMatrix(array2)
+
+        console.log('la prima media è ' + mediumValue(matrix1[0]) + ' e la seconda ' + mediumValue(matrix1[1]))
+        console.log('la prima media è ' + mediumValue(matrix2[0]) + ' e la seconda ' + mediumValue(matrix2[1]))
+
+    </script>
+</body>
+
+</html>
