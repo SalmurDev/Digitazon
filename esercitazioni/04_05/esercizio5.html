@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio5</title>
+</head>
+<body>
+    <!--creare una funzione cmpArr che prende in ingresso 2 array e restituisce:
+1 se il primo ha dimensioni maggiori del secondo
+-1 se il secondo ha dimensioni maggiori del primo
+0 se hanno dimensioni uguali
+Testare in output il comportamento di tutte e 3 le casistiche.-->
+
+<script>
+
+function cmpArr(a1,a2){
+    if(a1.length>a2.length) return 1
+    else if(a2.length>a1.length) return -1
+    else return 0
+}
+const a = [1,2,3]
+const b = [1,2]
+const c = [2,3,4]
+console.log(cmpArr(a,b))
+console.log(cmpArr(b,a))
+console.log(cmpArr(a,c))
+
+</script>
+</body>
+</html>

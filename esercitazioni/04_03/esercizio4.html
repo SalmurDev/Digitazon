@@ -21,20 +21,19 @@ j a v a s c r i p t-->
 
     <script>
 
-        function treeStr(input) {
-            let s = input.length / 2 - 1
-
-            for (let k = 0; k < input.length/2+1 ; k++) {
+        function treeStr(string) {
+            let s = string.length / 2 - 1
+            for (let k = 0; k < string.length/2+1 ; k++) {
                 let a = ''
-                for (let i = 0; i < input.length; i++) {
+                for (let i = 0; i < string.length; i++) {
                     if (i > (s - k) && i <= (s + k) || i == s) {
                         if (i == s && k == 0) {
                             a += ' '
                         }
-                        a += ' ' + input[i] + ' '
+                        a += string[i] + ' '
                     }
                     else
-                        a += '   '
+                        a += '  '
                 }
                 console.log(a);
             }

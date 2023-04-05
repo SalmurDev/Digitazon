@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio4</title>
+</head>
+
+<body>
+    <!--creare una mappa che rappresenta 5 stili CSS a piacere e stamparla in output.
+Creare la funzione showCSS che prende in ingresso la precedente mappa e stampa tutti i suoi elementi.-->
+
+    <script>
+
+        const style = new Map([
+            ['color', 'black'],
+            ['background-color', 'green'],
+            ['width', '100px'],
+            ['length', '100px'],
+            ['margin', '5px']
+        ])
+        console.log(style)
+        function showCSS(map) {
+            map.forEach(function (v, k) {
+                console.log(k + ': ' + v)
+            })
+        }
+        showCSS(style)
+
+    </script>
+
+</body>
+
+</html>

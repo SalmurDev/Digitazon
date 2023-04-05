@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio3</title>
+</head>
+
+<body>
+    <!--creare la funzione invertCase che prende in ingresso una stringa.
+Se la stringa è in lower case, restituisce la stringa in upper case.
+Se la stringa è in uppe rcase restituisce la stringa in lower case.
+Assumere che sia in una forma o l'altra.-->
+
+    <script>
+
+        function invertCase(string) {
+            let lc = 0
+            let uc = 0
+            for (i = 0; i < string.length; i++) {
+                if (string[i] == string[i].toUpperCase()) uc++
+                else lc++
+            }
+            console.log(lc)
+            console.log(uc)
+            if (lc == 0) {
+                return string.toLowerCase()
+            }
+            else if (uc == 0) {
+                return string.toUpperCase()
+            }
+            else return 'la stringa in ingresso non é corretta'
+        }
+
+        let s1 = 'dnsufhadcga'
+        let s2 = 'DSFGSDVBSV'
+        let s3 = 'fdsjVGBHD'
+        console.log(invertCase(s1))
+        console.log(invertCase(s2))
+        console.log(invertCase(s3))
+
+    </script>
+
+</body>
+
+</html>

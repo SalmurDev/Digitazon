@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio2</title>
+</head>
+
+<body>
+    <!--creare la funzione countVowels che prende in ingresso una stringa, e restituisce una mappa che avrà per chiavi tutte le vocali alfabetiche e per rispettivi valori il numero di occorrenze di ogni vocale nella stringa
+es 'ciao a tutti'   produce  { a => 2, e => 0, i => 2, o => 1, u => 1 }-->
+
+    <script>
+
+        function countVowels(string) {
+            if (typeof string == 'string') {
+                let a = 0, e = 0, i = 0, o = 0, u = 0
+                for (i = 0; i < string.length; i++) {
+                    if (string[i] == 'a') a++
+                    if (string[i] == 'e') e++
+                    if (string[i] == 'i') i++
+                    if (string[i] == 'o') o++
+                    if (string[i] == 'u') u++
+                }
+                let vowels = new Map([
+                    ['a', a],
+                    ['e', e],
+                    ['i', i],
+                    ['o', o],
+                    ['u', u]
+                ])
+                return vowels
+            }
+            else return 'la variabile in ingresso non é una stringa'
+        }
+
+        let s1 = 'ciao a tutti'
+        let s2 = 10
+
+        console.log(countVowels(s1))
+        console.log(countVowels(s2))
+
+
+    </script>
+</body>
+
+</html>
