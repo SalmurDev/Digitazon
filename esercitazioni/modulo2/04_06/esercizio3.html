@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio3</title>
+</head>
+
+<body>
+    <!--creare, a piacere, due letterali oggetto, che descriveranno rispettivamente:
+- uno studente (avrà nome, cognome, età, voti, un metodo per calcolare e stampare la sua media voti, un metodo per stabilire se è maggiorenne o meno)
+- un'automobile (avrà modello, marca, prezzo e tipoMotore. tipoMotore a sua volta avrà cilindrata, tipo (benzina, diesel o elettrico) e cv. L'automobile avrà un metodo printInfo che stampa in modo correttamente formattato e leggibile le sue feature
+richiamare i metodi dei due oggetti per stampare in output i risultati-->
+
+    <script>
+
+        let studente1 = {
+            nome: 'Selima',
+            cognome: 'Bascherini',
+            età: 23,
+            voti: [6, 7, 8, 9, 8],
+            media: function () {
+                let sum = 0
+                for (let i = 0; i < this.voti.length; i++) {
+                    sum += this.voti[i]
+                }
+                return sum / this.voti.length
+            },
+            maggiorenne: function () {
+                if (this.età >= 18) {
+                    return true
+                }
+                return false
+            }
+        }
+        let automobile1 = {
+            modello: 'punto',
+            marca: 'Fiat',
+            prezzo: 10000,
+            tipoMotore: {
+                cilindrata: 1300,
+                tipo: 'benzina',
+                cv: 100
+    }
+        }
+        console.log(studente1)
+        console.log(studente1.media())
+        console.log(studente1.maggiorenne())
+
+    </script>
+</body>
+
+</html>

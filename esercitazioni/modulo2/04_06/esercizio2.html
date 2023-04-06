@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio2</title>
+</head>
+
+<body>
+    <!--Creare una funzione parseShape che prende in ingresso un oggetto che abbia questo template:
+{ x: number, y: number, name: string }
+e produca un ouput relativo ad area e perimetro, in base al valore della proprietà shape che stabilisce il tipo di figura geometrica in uso.
+Richiamare la funzione due volte con:
+
+const quadrato = {x: 5, y: 5,  shape: 'square'}
+const rettangolo = {x: 5, y:4, shape: 'rectangle'}
+per stampare area e perimetro di quadrato e rettangolo.-->
+
+    <script>
+
+        const quadrato = { x: 5, y: 5, shape: 'square' }
+        const rettangolo = { x: 2, y: 6, shape: 'rectangle' }
+
+        console.log(quadrato)
+
+        function parseShape(object) {
+            if (object.hasOwnProperty('x') && object.hasOwnProperty('y') && object.hasOwnProperty('shape') && typeof object.x == 'number' && typeof object.y == 'number' && typeof object.shape == 'string') {
+                let a = 0
+                let p = 0
+                if (object.shape == 'square') {
+                    a = object.x * object.x
+                    p = object.x * 4
+                }
+                else if (object.shape == 'rectangle') {
+                    a = object.x * object.y
+                    p = object.x * 2 + object.y * 2
+                }
+                return 'l\'area del ' + object.shape + ' è ' + a + ' e il suo perimetro è ' + p
+            }
+            return 'l\'oggetto analizzato non è corretto'
+        }
+        console.log(parseShape(quadrato))
+        console.log(parseShape(rettangolo))
+
+        const barbagianni = { x: 2, shape: 'rectangle' }
+        console.log(parseShape(barbagianni))
+
+    </script>
+
+</body>
+
+</html>
