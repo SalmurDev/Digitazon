@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio1</title>
+</head>
+
+<body>
+    <!--prende in ingresso una stringa e ritorna il numero di occorrenze di ogni carattere-->
+    <script>
+
+        let a = 'abaco'
+
+        function occorrenze(string) {
+            let a = new Map()
+            for (i = 0; i < string.length; i++) {
+                if (a.has(string.charAt(i))) a.set(string.charAt(i), (a.get(string.charAt(i)) + 1))
+                else a.set(string.charAt(i), 1)
+            }
+            return a
+        }
+        console.log(occorrenze(a));
+
+
+    </script>
+</body>
+
+</html>
