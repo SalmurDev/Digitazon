@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio4</title>
+</head>
+
+<body>
+    <script>
+
+        // scrivere una funzione chiamata chessboard
+        // che prende in ingresso un numero l,
+        // la funzione deve stampare una scacchiera di lato l
+        // contenente '#' e ' ', opportunamente alternati
+
+        let a = '8'
+
+        function chessboard(l) {
+            if (typeof l != 'number') console.log('la variabile in ingresso non è un numero')
+            for (i = 0; i < l; i++) {
+                let row = ''
+                for (j = 0; j < l; j++) {
+                    if (i % 2 == j % 2) row += '#'
+                    else row += ' '
+                }
+                console.log(row)
+            }
+        }
+
+        chessboard(a)
+
+    </script>
+</body>
+
+</html>
