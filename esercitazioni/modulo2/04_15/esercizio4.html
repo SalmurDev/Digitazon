@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio4</title>
+</head>
+<body>
+      <!-- Data una stringa che contiene solo parentesi tonde aperte e parentesi tonde chiuse, scrvere una funzione che ritorna true se tutte le parentesi sono bilanciate, false altrimenti -->
+<script>
+
+function par(p){
+    let open = 0
+    let close = 0
+    for(i=0;i<p.length;i++){
+        if(p.charAt(i) == '(') open++
+        else if (p.charAt(i) == ')') close++
+    }
+    if (open == close) return true
+    else return false
+}
+let a = '(((((())))))()'
+console.log(par(a))
+
+
+</script>
+</body>
+</html>

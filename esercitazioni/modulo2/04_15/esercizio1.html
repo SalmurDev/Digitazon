@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio1</title>
+</head>
+
+<body>
+    <!--  dato l'array chiamato 'a1' con valori [10, 'ciao', true, 20, 'js', 4] usare un foreach per calcolare la somma degli elementi numerici e stamparla in output
+*/-->
+
+
+    <script>
+
+        let a1 = [10, 'ciao', true, 20, 'js', 4]
+        function sum(a) {
+            let sum = 0
+            a.forEach(function (v) {
+                if (typeof v == 'number') sum += v
+            })
+            return sum
+        }
+        console.log(`la somma è ${sum(a1)}`)
+
+
+    </script>
+</body>
+
+</html>
