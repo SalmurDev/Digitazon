@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio2</title>
+</head>
+
+<body>
+    <!--creare una funzione cmpDate che prende in ingresso 2 stringhe che rappresentano 2 date formattate nel formato americano visto a lezione.
+La funzione estrapola l'anno da entrambe le date e restituisce 1 se il primo anno è maggiore del secondo, -1 viceversa e 0 se sono pari.
+Chiamare la funzione 3 volte con valori a piacere.-->
+
+    <script>
+
+        function cmpDate(string1, string2) {
+            let y1 = string1.getFullYear()
+            let y2 = string2.getFullYear()
+            if (y1 > y2) return 1
+            if (y1 < y2) return -1
+            return 0
+        }
+
+        const d1 = new Date('2016-06-12')
+        const d2 = new Date('1985-11-25')
+        const d3 = new Date('1985-08-01')
+
+        console.log(cmpDate(d1, d2))
+        console.log(cmpDate(d3, d1))
+        console.log(cmpDate(d2, d3))
+
+    </script>
+</body>
+
+</html>

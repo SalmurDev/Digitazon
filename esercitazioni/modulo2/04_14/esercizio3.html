@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio3</title>
+</head>
+
+<body>
+    <!--creare l'apposita strategia per rappresentare, tramite oggetto, uno studente. Lo studente avrà:
+idMatricola: 14
+nomeCompleto: Luigi Verdi
+voti: 6, 7, 7
+
+Stampare in output la stringa tramite apposito algoritmo:
+
+il terzo voto dello studente con id 14 (Luigi Verdi) è 7-->
+
+    <script>
+        studente = {
+            idMatricola: 14,
+            nomeCompleto: 'Luigi Verdi',
+            voti: [6, 7, 7]
+        }
+        // function terzoVoto(s) {
+        //     if (s.idMatricola == 14) return s.voti[2]
+        // }
+        // console.log('il terzo voto dello studente con id 14 (Luigi Verdi) è ' + terzoVoto(studente));
+        console.log(`il terzo voto dello studente con id ${studente.idMatricola} (${studente.nomeCompleto}) è ${studente.voti[2]}`)
+    </script>
+</body>
+
+</html>

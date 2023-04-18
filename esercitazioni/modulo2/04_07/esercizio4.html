@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio4</title>
+</head>
+
+<body>
+    <!--dato il seguente JSON:
+
+[
+    {
+        "name": "mario",
+        "active": true,
+        "feat": {
+            "role": "protagonist"
+        }
+    },
+    {
+        "name": "luigi",
+        "active": true,
+        "feat": {
+            "role": "protagonist"
+        }
+    },
+    {
+        "name": "wario",
+        "active": false,
+        "feat": {
+            "role": "antagonist"
+        }
+    },
+    {
+        "name": "yoshi",
+        "active": false,
+        "feat": {
+            "role": "protagonist"
+        }
+    }
+]
+creare una funzione getInfo che, preso in ingresso l'array di oggetti ottenuto dal JSON, mi dice:
+- quanti protagonisti ci sono nell'array
+- quanti protagonisti attivi ci sono nell'array
+- quanti antagonisti ci sono nell'array-->
+
+    <script>
+
+        const json = `[
+    {
+        "name": "mario",
+        "active": true,
+        "feat": {
+            "role": "protagonist"
+        }
+    },
+    {
+        "name": "luigi",
+        "active": true,
+        "feat": {
+            "role": "protagonist"
+        }
+    },
+    {
+        "name": "wario",
+        "active": false,
+        "feat": {
+            "role": "antagonist"
+        }
+    },
+    {
+        "name": "yoshi",
+        "active": false,
+        "feat": {
+            "role": "protagonist"
+        }
+    }
+]`
+
+        const characters = JSON.parse(json)
+        console.log(characters)
+
+        function getInfo(array) {
+            let pro = 0
+            let activePro = 0
+            let ant =0
+            array.forEach(function(value){
+                if (value.feat.role == 'protagonist') pro++
+                    if(value.active) activePro++
+                else if (value.feat.role == 'antagonist') ant++
+            });
+            return 'Ci sono ' + pro + ' protagonisti, di cui ' + activePro + ' attivi, e ' + ant + ' antagonisti.' 
+        }
+
+        console.log(getInfo(characters))
+
+
+
+    </script>
+</body>
+
+</html>

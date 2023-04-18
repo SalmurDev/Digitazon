@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio1</title>
+</head>
+
+<body>
+    <!--creare una funzione formatDate che, presi in ingresso un numero, una stringa e un numero, stampi una data formattata.
+Il primo numero rappresenta l'anno, la stringa il nome del mese e il secondo numero il giorno.
+es: formatDate(2023, 'maggio', 17)   stampa "17-05-2023"-->
+
+    <script>
+
+        function formatDate(y, m, d) {
+            let month = ''
+            if (m == 'gennaio') month = 1
+            else if (m == 'febbraio') month = 2
+            else if (m == 'marzo') month = 3
+            else if (m == 'aprile') month = 4
+            else if (m == 'maggio') month = 5
+            else if (m == 'giugno') month = 6
+            else if (m == 'luglio') month = 7
+            else if (m == 'agosto') month = 8
+            else if (m == 'settembre') month = 9
+            else if (m == 'ottobre') month = 10
+            else if (m == 'novembre') month = 11
+            else if (m == 'dicembre') month = 12
+            else return 'il mese inserito non è nel formato corretto'
+            if (d > 31 || d < 0) return 'il giorno inserito non è nel formato corretto'
+            return d + '-' + month + '-' + y
+        }
+
+        let year = 2016
+        let month = 'febbraio'
+        let day = 14
+        console.log(formatDate(year, month, day))
+
+
+
+    </script>
+</body>
+
+</html>
