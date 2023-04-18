@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio2</title>
+</head>
+
+<body>
+    <!-- Creare una funzione makeObj che prende in ingresso due parametri:
+una stringa e un numero.
+La funzione crea e RESTITUISCE un oggetto con due proprietà: label, che avrà come valore il valore passato come primo parametro, e rate, che avrà come valore il valore passato come secondo parametro.
+Chiamare la funzione makeObj due volte con valori a piacere per creare e stampare in output due oggetti con i valori indicati. -->
+
+    <script>
+
+        function makeObj(string, n) {
+            return {
+                label: `${string}`,
+                rate: n
+            }
+        }
+        let student1 = makeObj('Mario', 8)
+        let student2 = makeObj('Giorgia', 9)
+        console.log(student1);
+        console.log(student2)
+
+    </script>
+</body>
+
+</html>
