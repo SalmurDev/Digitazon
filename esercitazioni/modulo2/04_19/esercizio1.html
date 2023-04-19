@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio1</title>
+</head>
+<body>
+    <!-- Creare un array che è composto da 3 oggetti, che rappresentano dei rettangoli, e avranno le proprietà base e altezza (numeri).
+Crea quindi 3 oggetti che rappresentano 3 rettangoli con le caratteristiche indicate, mettili in un array.
+Cicla questo array SIA con un foreach PRIMA che con un for DOPO, per stampare l'area di ogni rettangolo (ad ogni iterazione) -->
+
+<script>
+
+let a = [
+    {base: 4, altezza: 5},
+    {base: 3, altezza: 7},
+    {base: 6, altezza: 2}
+]
+
+function foreach(arr){
+let id = 1
+arr.forEach(el => {
+    console.log(`Area rettangolo ${id++}: ${el.base*el.altezza}`)
+});
+}
+foreach(a)
+
+function forArea(arr){
+for(let i=0;i<arr.length;i++){
+    console.log(`Area rettangolo ${i+1}: ${arr[i].base*arr[i].altezza}`)
+}
+}
+forArea(a)
+
+
+
+</script>
+</body>
+</html>

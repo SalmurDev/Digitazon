@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>esercizio3</title>
+  <title>zig</title>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
   <!-- La funzione accetta in ingresso la stringa e un numero di righe, in questo caso e' stata invocata cosi: converti("PAYPALISHIRING", 3) -->
 
   <script>
-
+    // graficamente
     function zigZag(string, n) {
       let rows = new Map();
       for (let i = 0; i < n; i++) {
@@ -36,8 +36,35 @@
     };
     zigZag('abcdefghijklmnopqrstuvwxyzfhydufgdsbybfjdshvfdsbfdasdasdaghhjbd', 8)
     zigZag("PAYPALISHIRING", 3)
-
   </script>
+
+  <script>
+    // stringa
+    function zigZag(string, n) {
+      let rows = new Map();
+      for (let i = 0; i < n; i++) {
+        rows.set(`row ${i}`, '')
+      };
+      for (let a = 0; a < string.length / (2 * (n - 1)); a++) {
+        let b = a * (2 * (n - 1))
+        for (let i = 0 + b; i < 2 * (n - 1) + b && i < string.length; i++) {
+          if (i < n + b) rows.set(`row ${i - b}`, rows.get(`row ${i - b}`) + string.charAt(i))
+          else {
+            for (let j = 0; j < n; j++)
+              if (j == n - ((i - b) - (n - 2))) rows.set(`row ${j}`, rows.get(`row ${j}`) + string.charAt(i))
+          }
+        }
+      };
+      let result = ''
+      for (let i = 0; i < n; i++) {
+        result += rows.get(`row ${i}`)
+      }
+      return result
+    };
+    console.log(zigZag('abcdefghijklmnopqrstuvwxyzfhydufgdsbybfjdshvfdsbfdasdasdaghhjbd', 8))
+    console.log(zigZag("PAYPALISHIRING", 3))
+  </script>
+  
 </body>
 
 </html>
