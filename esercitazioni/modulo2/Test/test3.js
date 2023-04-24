@@ -32,14 +32,9 @@ let tree = {
         'right': 'null'
     }
 }
-//console.log(tree['left']);
-//se è uscito dal ciclo for, 
-//
 
-function findPerson(object,Person){
-    for (const key in object) {
-        if(object.key == Person) return 1
-        if(typeof object.key == 'object') return 1 + findPerson(object[key],Person)
-    } 
+function findPerson(object, Person) {
+    if (object.value == Person) return 1
+    else return findPerson(object['left']) + 1
 }
-console.log(findPerson(tree,'Earendil'))
+console.log(findPerson(tree, 'Earendil'))
