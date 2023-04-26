@@ -1,11 +1,28 @@
-function tri(n) {
-    if (n <= 0) return
-    else {
-        let a = ''
-        for (let i = 0; i < n; i++) {
-            a += 'x'
-        }
-        return tri(n-1)+ console.log(a)
+let tree = {
+    'value': 'Arwen',
+    'left': {
+        'value': 'Earendil',
+        'left': {
+            'value': 'Nimloth the Fair',
+            'left': 'null',
+            'right': 'null'
+        },
+        'right': {
+            'value': 'Galadriel',
+            'left': {
+                'value': 'Eowin',
+                'left': 'null',
+                'right': 'null'
+            },
+            'right': 'null'
+        },
+    },
+    'right': {
+        'value': 'Shelob',
+        'left': 'null',
+        'right': 'null'
     }
 }
-tri(5)
+
+console.log(tree.value)
+console.log(tree['value'])
