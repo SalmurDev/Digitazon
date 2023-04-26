@@ -20,7 +20,7 @@
 //  ['*','*','*','*','*']
 // ]
 
-function Hourglass(h, n, i, m){
+function Hourglass(h, n, i, m) {
     if (i >= h) return
     if (i <= n) {
         let a1 = Array(i).fill(' ')
@@ -42,7 +42,7 @@ function Hourglass(h, n, i, m){
 function recursiveHourglass(n) {
     let matrix = []
     const h = (n * 2) - 1
-    Hourglass(h, n-1, 0, matrix)
+    Hourglass(h, n - 1, 0, matrix)
     return matrix
 }
 console.log(recursiveHourglass(5));

@@ -68,4 +68,4 @@ function treeRed(reducer, tree, obj) {
     treeRed(reducer, tree.right, obj)
 }
 
-console.log(recursiveTreeSum(sum,0,tree));
+console.log(recursiveTreeSum(sum, 0, tree));

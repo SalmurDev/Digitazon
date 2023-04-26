@@ -21,7 +21,7 @@ function recursive(arr, fn, i, r) {
     recursive(arr, fn, i + 1, r)
 }
 
-function recursiveMap(arr,fn){
+function recursiveMap(arr, fn) {
     let result = []
     recursive(arr, fn, 0, result)
     return result

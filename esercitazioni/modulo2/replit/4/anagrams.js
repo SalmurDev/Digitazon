@@ -22,7 +22,7 @@ function anagrams(string, arr) {
         let elLetters = getLetters(el);
         let anagram = true
         if (letterList.size != elLetters.size) anagram = false
-        elLetters.forEach(function(v, k){
+        elLetters.forEach(function (v, k) {
             if (!(letterList.has(k) && (letterList.get(k) == elLetters.get(k)))) anagram = false
         })
         if (anagram == true) result.push(el)
