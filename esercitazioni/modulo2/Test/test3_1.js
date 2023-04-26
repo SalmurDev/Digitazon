@@ -51,4 +51,4 @@ function findChar2(tree, person) {
     return obj.currentDepth
 }
 
-console.log(findChar2(tree, 'Shelob'))
+console.log(findChar2(tree, 'Nimloth the Fair'))
