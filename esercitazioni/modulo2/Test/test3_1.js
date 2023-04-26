@@ -37,12 +37,12 @@ let tree = {
 
 function findDepth2(tree, person, obj, depth) {
     for (const key in tree) {
+        console.log(tree[key])
         if (tree[key] == person) obj.currentDepth = depth
         if (typeof tree[key] == 'object')
             findDepth2(tree[key], person, obj, depth + 1)
     }
     return
-
 }
 
 function findChar2(tree, person) {
@@ -50,5 +50,5 @@ function findChar2(tree, person) {
     findDepth2(tree, person, obj, 1)
     return obj.currentDepth
 }
-
-console.log(findChar2(tree, 'Nimloth the Fair'))
+findChar2(tree, 'Nimloth the Fair')
+//console.log(findChar2(tree, 'Nimloth the Fair'))
