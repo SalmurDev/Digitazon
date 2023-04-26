@@ -33,8 +33,18 @@ let tree = {
     }
 }
 
-function findPerson(object, Person) {
-    if (object.value == Person) return 1
-    else return findPerson(object['left']) + 1
+// funzione ricorsiva che funziona soltanto se le chiavi sono left e right
+
+function findDepth(tree, person, obj, depth){
+    if(!tree) return
+    if(tree.value == person) obj.currentDepth = depth
+    findDepth(tree.left, person, obj, depth+1)
+    findDepth(tree.right, person, obj, depth+1)
 }
-console.log(findPerson(tree, 'Earendil'))
+function findChar(tree, person){
+    const obj = {currentDepth: -1}
+    findDepth(tree, person, obj, 1)
+    return obj.currentDepth
+}
+
+console.log(findChar(tree,'Nimloth the Fair'))
