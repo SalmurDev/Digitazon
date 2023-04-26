@@ -15,10 +15,10 @@
 // Ricordate che le stringhe in JavaScript sono trattate in modo simile agli array.
 // La funzione deve ritornare la nuova stringa aggiornata.
 
-function findReplace(txt,word,repl){
+function findReplace(txt, word, repl) {
     let arr = txt.split(' ')
-    for (let i = 0; i < arr.length; i++) {        
-        if(arr[i] == word) arr.splice(i,1,repl)
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == word) arr.splice(i, 1, repl)
     }
     let result = ''
     arr.forEach(el => {
@@ -30,5 +30,5 @@ function findReplace(txt,word,repl){
 
 let string = 'tanto va la gatta al lardo che ci mette lo zampino'
 let find = 'zampino'
-let replace = 'strutto' 
-console.log(findReplace(string,find,replace))
+let replace = 'strutto'
+console.log(findReplace(string, find, replace))

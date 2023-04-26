@@ -35,20 +35,20 @@ let tree = {
 
 // funzione ricorsiva che funziona per qualsiasi nome e numero di chiavi
 
-function findDepth2(tree, person, obj, depth) {    
+function findDepth2(tree, person, obj, depth) {
     for (const key in tree) {
         if (tree[key] == person) obj.currentDepth = depth
-        if (typeof tree[key] == 'object') 
-            findDepth2(tree[key], person, obj, depth+1)
+        if (typeof tree[key] == 'object')
+            findDepth2(tree[key], person, obj, depth + 1)
     }
     return
 
 }
 
-function findChar2(tree, person){
-    const obj = {currentDepth: -1}
+function findChar2(tree, person) {
+    const obj = { currentDepth: -1 }
     findDepth2(tree, person, obj, 1)
     return obj.currentDepth
 }
 
-console.log(findChar2(tree,'Shelob'))
+console.log(findChar2(tree, 'Shelob'))

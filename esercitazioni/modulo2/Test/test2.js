@@ -38,11 +38,11 @@ function findUpdate(arr) {
     for (let i = 0; i < arr.length; i++) {
         for (const key in arr[i]) {
             if (arr[i][key] == null) {
-                if (arr[i].type == 'boolean') arr[i][key]  = false
+                if (arr[i].type == 'boolean') arr[i][key] = false
                 if (arr[i].type == 'string') arr[i][key] = ''
-                if (arr[i].type == 'number') arr[i][key]  = 0
-                if (arr[i].type == 'array') arr[i][key]  = []
-                if (arr[i].type == 'object') arr[i][key]  = {}
+                if (arr[i].type == 'number') arr[i][key] = 0
+                if (arr[i].type == 'array') arr[i][key] = []
+                if (arr[i].type == 'object') arr[i][key] = {}
             }
         }
     }
