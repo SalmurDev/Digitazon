@@ -10,14 +10,60 @@
 
 <body>
     <script>
+// 3 - L’Albero del Re
+// Affrontare questo esercizio solo se si sono risolti i precedenti due.
+// Dato questa struttura ad albero:
+// navigarla visitando i nodi alla ricerca del valore “Nimloth the Fair”, se trovato ritornare a che
+// distanza si trova dalla radice dell’albero, se non trovato ritornare -1.
+// Non e’ detto che l’albero con cui valutero’ il vostro esercizio avra’ questa struttura.
+// Non abbiamo mai visto questo tipo di strutture dati a lezione, per questo motivo l’esercizio e’
+// interamente opzionale.
 
-let string = 'tanto va la gatta al lardo che ci mette lo zampino'
-let find = 'zampino'
-let replace = 'strutto' 
-//console.log(findReplace(string,find,replace))
-let splitString = string.split(' ')
-console.log(splitString);
+let tree = {
+    'value': 'Arwen',
+    'left': {
+        'value': 'Earendil',
+        'left': {
+            'value': 'Nimloth the Fair',
+            'left': 'null',
+            'right': 'null'
+        },
+        'right': {
+            'value': 'Galadriel',
+            'left': {
+                'value': 'Eowin',
+                'left': 'null',
+                'right': 'null'
+            },
+            'right': 'null'
+        },
+    },
+    'right': {
+        'value': 'Shelob',
+        'left': 'null',
+        'right': 'null'
+    }
+}
 
+
+function findPerson(object, person, count) {    
+    for (const key in object) {
+        if (object[key] == person) return count
+        if (typeof object[key] == 'object') 
+            findPerson(object[key], person, count+1)
+    }
+    return -1
+}
+console.log(findPerson(tree, 'Nimloth the Fair',1))
+
+function findChar(object, person, depth){
+    if(!object) return
+    if(object.value == person) return depth
+    if(object.left)findChar(object.left, person, depth+1)
+    if(object.right)findChar(object.right, person, depth+1)
+    return -1
+}
+console.log(findChar(tree, 'Eowin', 1))
     </script>
 </body>
 
