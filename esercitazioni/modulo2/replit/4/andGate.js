@@ -17,11 +17,11 @@ function nand(b1, b2) {
 }
 
 function andGate(b1, b2) {
-    return nand(nand(b1,b2),nand(b1,b2))
+    return nand(nand(b1, b2), nand(b1, b2))
 }
 let t = true
 let f = false
-console.log(andGate(t,t))
-console.log(andGate(t,f))
-console.log(andGate(f,t))
-console.log(andGate(f,f))
+console.log(andGate(t, t))
+console.log(andGate(t, f))
+console.log(andGate(f, t))
+console.log(andGate(f, f))

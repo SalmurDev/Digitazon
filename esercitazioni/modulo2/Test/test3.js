@@ -33,6 +33,7 @@ let tree = {
     }
 }
 
+<<<<<<< HEAD
 console.log(JSON.stringify(tree).match('{'))
 
 //crea un loop che cicla all'interno dell'oggetto
@@ -61,3 +62,20 @@ console.log(JSON.stringify(tree).match('{'))
 //     return -1
 // }
 // console.log(findChar(tree, 'Eowin', 1))
+=======
+// funzione ricorsiva che funziona soltanto se le chiavi sono left e right
+
+function findDepth(tree, person, obj, depth) {
+    if (!tree) return
+    if (tree.value == person) obj.currentDepth = depth
+    findDepth(tree.left, person, obj, depth + 1)
+    findDepth(tree.right, person, obj, depth + 1)
+}
+function findChar(tree, person) {
+    const obj = { currentDepth: -1 }
+    findDepth(tree, person, obj, 1)
+    return obj.currentDepth
+}
+
+console.log(findChar(tree, 'Nimloth the Fair'))
+>>>>>>> 8683725567f791b26565c36452b01cce62c8dc80
