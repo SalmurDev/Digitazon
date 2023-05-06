@@ -33,9 +33,7 @@ function stringToArray(string) {
 function removeEmptyString(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] == '') arr.splice(i, 1)
-        // per qualche motivo a me oscuro se metto nell'if Number(arr[i]) != NaN non funziona, 
-        // quindi utilizzo questa versione, supponendo che la spesa non possa essere negativa
-        if (arr[i] > 0 || arr[i] == '0') arr[i] = Number(arr[i])
+        if (!isNaN(Number(arr[i]))) arr[i] = Number(arr[i])
     }
     return arr
 }
