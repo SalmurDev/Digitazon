@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+ul{
+    display: flex;
+    flex-direction: column;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+.checked{
+    opacity: 0.5;
+    order: 2
+}
+.notChecked{
+    order: 1
+}

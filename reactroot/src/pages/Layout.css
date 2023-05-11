@@ -1,0 +1,24 @@
+.layout{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;    
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: antiquewhite;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(254, 40, 111);
+}
+a:visited{
+    color: inherit;
+}
+a:hover{
+    color: blueviolet;
+    background-color: rgb(255, 207, 144);
+}
+body{
+    display: flex;
+}
