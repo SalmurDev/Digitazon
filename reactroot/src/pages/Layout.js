@@ -2,7 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 import './Layout.css';
 const Layout = () => {
   return (
-    <body>
+    <main>
       <nav>
         <ul className="layout">
           <li>
@@ -17,12 +17,15 @@ const Layout = () => {
           <li>
             <Link to="/toDoList">ToDoList</Link>
           </li>
+          <li>
+            <Link to="/chatGpt">ChatGpt</Link>
+          </li>
         </ul>
       </nav>
-      <main>
+      <header>
         <Outlet />
-      </main>      
-    </body>
+      </header>      
+    </main>
   )
 };
 

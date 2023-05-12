@@ -19,6 +19,12 @@ a:hover{
     color: blueviolet;
     background-color: rgb(255, 207, 144);
 }
-body{
+main{
     display: flex;
+}
+nav{
+    border-right: 1px solid black;
+}
+header{
+    margin: 5px;
 }

@@ -5,6 +5,7 @@ import Fetch from "./pages/fetch";
 import Msg from "./pages/msg";
 import NoPage from "./pages/NoPage";
 import ToDoList from "./pages/toDoList";
+import ChatGpt from "./pages/chatGpt";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="fetch" element={<Fetch />} />
           <Route path="msg" element={<Msg />} />
           <Route path="toDoList" element={<ToDoList />} />
+          <Route path="chatGpt" element={<ChatGpt />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
