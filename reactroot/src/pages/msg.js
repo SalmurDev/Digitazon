@@ -5,7 +5,8 @@ export default function Msg() {
     const [messages, setMessages] = useState([]);
 
     return (
-        <main>
+        <>
+        <h1>Chat</h1>
             <ul>
                 {messages.map((t) => (
                     <li className="message">
@@ -40,6 +41,6 @@ export default function Msg() {
                     invia
                 </button>
             </footer>
-        </main>
+        </>
     );
 }
