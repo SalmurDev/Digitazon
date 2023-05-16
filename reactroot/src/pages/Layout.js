@@ -20,6 +20,12 @@ const Layout = () => {
           <li>
             <Link to="/chatGpt">ChatGpt</Link>
           </li>
+          <li>
+            <Link to="/redText">RedText</Link>
+          </li>
+          <li>
+            <Link to="/fortuneWheel">FortuneWheel</Link>
+          </li>
         </ul>
       </nav>
       <header>

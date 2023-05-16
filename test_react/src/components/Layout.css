@@ -1,0 +1,116 @@
+main {
+    display: flex;
+    width: 100%;
+}
+
+.posts,
+header {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+    main, header {
+        width: 984px;
+        }
+  }
+
+nav {
+    margin-right: 20px;
+}
+
+.page{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+header {
+    margin-bottom: 30px;
+}
+
+.layout li {
+    list-style-type: none;
+    padding: 20px;
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.posts {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+.post,
+.comment,
+.found {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.comment {
+    align-self: flex-end;
+    width: 60%;
+}
+
+.found {
+    border-radius: 10px;
+}
+
+.found:hover,
+.postbar:hover {
+    background-color: rgb(254, 213, 159);
+}
+
+.postbar,
+.found {
+    background-color: antiquewhite;
+}
+input,
+button {
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+        background-color: rgb(255, 213, 114);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+
+.findbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.foundlinks{
+    margin-top: 10px;
+    height: 20px;
+}
