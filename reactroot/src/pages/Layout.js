@@ -22,9 +22,12 @@ const Layout = () => {
           </li>
           <li>
             <Link to="/redText">RedText</Link>
+          </li>          
+          <li>
+            <Link to="/excelRow">ExcelRow</Link>
           </li>
           <li>
-            <Link to="/fortuneWheel">FortuneWheel</Link>
+            <Link to="/unclickableButton">UnclickableButton</Link>
           </li>
         </ul>
       </nav>

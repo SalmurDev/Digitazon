@@ -4,8 +4,6 @@ import Home from "./components/Home";
 import Post from "./components/post";
 import NoPage from "./components/NoPage";
 
-
-
 export default function App() {  
   return (
     <BrowserRouter>

@@ -1,0 +1,22 @@
+.chatGpt{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+input.chatGpt{
+    width: 500px;
+}
+button.chatGpt:hover{
+    background-color: rgb(176, 93, 254);
+    cursor: pointer;
+}
+.gptResponse{
+    display: flex;
+}
+.assistant{
+    height: fit-content ;    
+    background-color: rgb(186, 180, 251);
+}
+.response{
+    background-color: rgb(224, 156, 253);
+}

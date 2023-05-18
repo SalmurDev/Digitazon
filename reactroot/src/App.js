@@ -7,7 +7,8 @@ import NoPage from "./pages/NoPage";
 import ToDoList from "./pages/toDoList";
 import ChatGpt from "./pages/chatGpt";
 import RedText from "./pages/redText";
-import FortuneWheel from "./pages/fortuneWheel";
+import ExcelRow from "./pages/excelRow";
+import UnclickableButton from "./pages/unclickableButton";
 
 export default function App() {
   return (
@@ -20,7 +21,8 @@ export default function App() {
           <Route path="toDoList" element={<ToDoList />} />
           <Route path="chatGpt" element={<ChatGpt />} />
           <Route path="redText" element={<RedText />} />
-          <Route path="fortuneWheel" element={<FortuneWheel />} />
+          <Route path="excelRow" element={<ExcelRow />} />
+          <Route path="unclickableButton" element={<UnclickableButton />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
