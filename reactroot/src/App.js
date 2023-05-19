@@ -9,6 +9,8 @@ import ChatGpt from "./pages/chatGpt";
 import RedText from "./pages/redText";
 import ExcelRow from "./pages/excelRow";
 import UnclickableButton from "./pages/unclickableButton";
+import StringaRgb from "./pages/stringaRgb";
+import Posizione from "./pages/posizione";
 
 export default function App() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
           <Route path="redText" element={<RedText />} />
           <Route path="excelRow" element={<ExcelRow />} />
           <Route path="unclickableButton" element={<UnclickableButton />} />
+          <Route path="stringaRgb" element={<StringaRgb />} />
+          <Route path="posizione" element={<Posizione />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
