@@ -3,6 +3,7 @@ import { useState } from "react"
 import './Layout.css';
 import Find from './Find'
 const Layout = () => {
+    // per questioni di tempo non ho ultimato il carrello. L'ho soltanto impostato.
     const [cart, setCart] = useState([])
     const [total, setTotal] = useState(0)
     return (

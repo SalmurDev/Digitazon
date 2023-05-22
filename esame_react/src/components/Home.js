@@ -17,7 +17,7 @@ const Home = () => {
     <ul className="categories">
       {categories.map((c) => (
         <li>
-          <Link to="/category" state={{ category: `${c}` }}>
+          <Link to="/category" state={{ category: c }}>
             {c}
           </Link>
         </li>

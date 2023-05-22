@@ -52,6 +52,20 @@ li{
 .findbar li:hover{
     background-color: antiquewhite;
 }
+div.categoryLink{    
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+}
+.categoryLink p{
+    margin: 5px;
+}
+a.categoryLink{
+    font-weight: bold;
+}
+a.categoryLink:hover{
+    text-decoration: underline;
+}
 a {
     text-decoration: none;
     display: block;
