@@ -20,7 +20,7 @@ export default function Find() {
     function check() {
         let ids = []
         if (search !== '') titles.forEach((el, i) => {
-            if (el.includes(search)) ids.push(i + 1)
+            if (el.toLowerCase().includes(search.toLowerCase())) ids.push(i + 1)
         })
         getProductId(ids)
     }
@@ -37,7 +37,7 @@ export default function Find() {
         <ul>
             {productId.map((el) => (
                 <li>
-                    <Link to="/product" state={{ id: `${el}` }} >
+                    <Link to="/product" state={{ id: el }} >
                         {titles[el - 1]}
                     </Link>
                 </li>

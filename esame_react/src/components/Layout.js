@@ -22,9 +22,6 @@ const Layout = () => {
                 </nav>
             </section>
             <section className="page">
-
-                <header>
-                </header>
                 <main>
                     <Outlet />
                 </main>
