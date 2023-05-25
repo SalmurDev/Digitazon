@@ -29,6 +29,12 @@ const Layout = () => {
           <li>
             <Link to="/unclickableButton">UnclickableButton</Link>
           </li>
+          <li>
+            <Link to="/stringaRgb">StringaRgb</Link>
+          </li>
+          <li>
+            <Link to="/posizione">Posizione</Link>
+          </li>
         </ul>
       </nav>
       <header>

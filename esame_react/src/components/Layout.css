@@ -1,0 +1,97 @@
+#root{
+    display: flex;    
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+ul{
+    padding: 0;
+    margin: 5px;
+}
+img{
+    width: 300px;
+}
+.home img{
+    width: 100px;
+    margin: 10px;
+}
+.page{
+    width: 100%;
+}
+.cart{
+    width: 200px;
+}
+.price{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+main, .category a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1, h2, h3, h4{
+    text-align: center;
+}
+p{
+    margin: 5px;
+}
+li{
+    list-style-type: none;
+}
+.category li{
+    margin: 10px;
+}
+.categories li,
+.findbar li {
+    background-color: rgb(253, 247, 240);
+}
+.categories li:hover,
+.findbar li:hover{
+    background-color: antiquewhite;
+}
+div.categoryLink{    
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+}
+.categoryLink p{
+    margin: 5px;
+}
+a.categoryLink{
+    font-weight: bold;
+}
+a.categoryLink:hover{
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.categories{
+    width: 80%;
+}
+.categories a{
+    padding: 10px;
+}
+a:visited {
+    color: inherit;
+}
+input,
+button{
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+button {
+        background-color: rgb(255, 213, 114);
+}
+button:hover {
+    cursor: pointer;
+    background-color: orange;
+}

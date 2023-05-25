@@ -3,7 +3,7 @@ import { Configuration, OpenAIApi } from "openai";
 import './chatGpt.css';
 
 const configuration = new Configuration({
-    apiKey: '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',
+    apiKey: process.env.REACT_APP_CHATGPT,
 });
 const openai = new OpenAIApi(configuration);
 
@@ -25,7 +25,7 @@ const ChatGpt = () => {
             splitted.forEach(el => {
                 if (el.includes('https://www.youtube.com')) link = el.replace('watch?v=', 'embed/')
             });
-            if (link.charAt(link.length - 1) === '.') link = link.slice(0, -1)
+            if (link.charAt(link.length - 1) === '.' || link.charAt(link.length - 1) === ',') link = link.slice(0, -1)
             setVideo(link)
         }
         setResponse(chatGptAnswer)
